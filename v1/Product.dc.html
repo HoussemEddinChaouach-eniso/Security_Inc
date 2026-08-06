@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;padding:0;background:#ffffff;color:#0a0a0a;}
+body{font-family:'Space Grotesk',sans-serif;-webkit-font-smoothing:antialiased;}
+a{color:#0a0a0a;text-decoration:none;}
+a:hover{color:#0a0a0a;}
+*{box-sizing:border-box;}
+</style>
+</helmet>
+<div style="min-height:100vh;background:#ffffff;color:#0a0a0a;">
+  <nav data-screen-label="Nav" style="display:flex;align-items:center;justify-content:space-between;padding:0 48px;height:76px;border-bottom:1px solid #0a0a0a;position:sticky;top:0;background:#ffffff;z-index:50;">
+    <a href="Home.dc.html" style="display:flex;align-items:center;gap:12px;">
+      <img src="uploads/logo-1785579207394.jpg" alt="Cyber Guards" style="width:36px;height:36px;object-fit:cover;">
+      <span style="font-weight:700;font-size:17px;letter-spacing:0.06em;text-transform:uppercase;">Cyber Guards</span>
+    </a>
+    <div style="display:flex;align-items:center;gap:36px;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;">
+      <a href="Home.dc.html" style-hover="border-bottom:2px solid #0a0a0a;">Home</a>
+      <a href="Services.dc.html" style-hover="border-bottom:2px solid #0a0a0a;">Services</a>
+      <a href="Product.dc.html" style="border-bottom:2px solid #0a0a0a;padding-bottom:2px;">Product</a>
+      <a href="About.dc.html" style-hover="border-bottom:2px solid #0a0a0a;">About Us</a>
+    </div>
+    <a href="About.dc.html#contact" style="background:#0a0a0a;color:#ffffff;padding:12px 24px;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.08em;text-transform:uppercase;" style-hover="background:#ffffff;color:#0a0a0a;box-shadow:inset 0 0 0 1px #0a0a0a;">Book a demo</a>
+  </nav>
+
+  <header data-screen-label="Product hero" style="padding:100px 48px 80px;border-bottom:1px solid #0a0a0a;">
+    <div style="max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:28px;">
+      <div style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:0.14em;text-transform:uppercase;color:#555555;">Product — Aegis</div>
+      <h1 style="margin:0;font-size:clamp(44px,6vw,84px);line-height:1.03;font-weight:700;letter-spacing:-0.02em;max-width:16ch;text-wrap:balance;">Your pentesters, minus the busywork.</h1>
+      <p style="margin:0;font-size:19px;line-height:1.6;max-width:56ch;color:#333333;text-wrap:pretty;">Aegis automates the redundant tasks of a penetration test — reconnaissance, enumeration, evidence capture, and reporting — so senior testers spend their time on the attacks only humans can find.</p>
+      <div style="display:flex;gap:16px;">
+        <a href="About.dc.html#contact" style="background:#0a0a0a;color:#ffffff;padding:16px 32px;font-family:'IBM Plex Mono',monospace;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;" style-hover="background:#ffffff;color:#0a0a0a;box-shadow:inset 0 0 0 1px #0a0a0a;">Book a demo</a>
+      </div>
+    </div>
+  </header>
+
+  <section data-screen-label="Terminal" style="padding:80px 48px;border-bottom:1px solid #0a0a0a;background:#0a0a0a;color:#ffffff;">
+    <div style="max-width:1000px;margin:0 auto;display:flex;flex-direction:column;gap:0;">
+      <div style="display:flex;align-items:center;gap:8px;border:1px solid #333333;border-bottom:none;padding:14px 20px;">
+        <span style="width:10px;height:10px;border-radius:50%;background:#ffffff;opacity:0.9;"></span>
+        <span style="width:10px;height:10px;border-radius:50%;background:#ffffff;opacity:0.5;"></span>
+        <span style="width:10px;height:10px;border-radius:50%;background:#ffffff;opacity:0.25;"></span>
+        <span style="margin-left:12px;font-family:'IBM Plex Mono',monospace;font-size:12px;color:#888888;">aegis — engagement #4127</span>
+      </div>
+      <div style="border:1px solid #333333;padding:32px;font-family:'IBM Plex Mono',monospace;font-size:14px;line-height:2.1;color:#cccccc;">
+        <div style="color:#666666;">$ aegis run --scope external --target acme.corp</div>
+        <div>[00:02] recon          <span style="color:#ffffff;">214 assets discovered</span></div>
+        <div>[00:11] enumeration    <span style="color:#ffffff;">38 services fingerprinted</span></div>
+        <div>[00:19] screenshots    <span style="color:#ffffff;">evidence captured & indexed</span></div>
+        <div>[00:24] triage         <span style="color:#ffffff;">12 findings queued for analyst review</span></div>
+        <div>[00:26] report         <span style="color:#ffffff;">draft sections generated</span></div>
+        <div style="color:#666666;">✓ done — est. 6.5 analyst-hours saved on this engagement</div>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Features" style="padding:90px 48px;border-bottom:1px solid #0a0a0a;">
+    <div style="max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:48px;">
+      <h2 style="margin:0;font-size:40px;font-weight:700;letter-spacing:-0.01em;">What Aegis takes off your plate</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1px;background:#0a0a0a;border:1px solid #0a0a0a;">
+        <sc-for list="{{ features }}" as="f" hint-placeholder-count="6">
+          <div style="background:#ffffff;padding:36px;display:flex;flex-direction:column;gap:12px;">
+            <div style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.12em;color:#888888;">{{ f.num }}</div>
+            <h3 style="margin:0;font-size:20px;font-weight:600;">{{ f.name }}</h3>
+            <p style="margin:0;font-size:14px;line-height:1.6;color:#333333;">{{ f.desc }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="Who it's for" style="padding:90px 48px;border-bottom:1px solid #0a0a0a;">
+    <div style="max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;">
+      <h2 style="margin:0;font-size:40px;font-weight:700;letter-spacing:-0.01em;text-wrap:balance;">Built for the people who do the work.</h2>
+      <div style="display:flex;flex-direction:column;gap:32px;">
+        <div style="display:flex;flex-direction:column;gap:8px;border-left:1px solid #0a0a0a;padding-left:28px;">
+          <h3 style="margin:0;font-size:19px;font-weight:600;">Pentesters & red teams</h3>
+          <p style="margin:0;font-size:15px;line-height:1.6;color:#333333;">Cut hours of recon and report drafting per engagement. Every automated step is logged and reviewable.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px;border-left:1px solid #0a0a0a;padding-left:28px;">
+          <h3 style="margin:0;font-size:19px;font-weight:600;">Security consultancies</h3>
+          <p style="margin:0;font-size:15px;line-height:1.6;color:#333333;">Deliver more engagements with the same senior headcount, with consistent quality across teams.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:8px;border-left:1px solid #0a0a0a;padding-left:28px;">
+          <h3 style="margin:0;font-size:19px;font-weight:600;">Internal security teams</h3>
+          <p style="margin:0;font-size:15px;line-height:1.6;color:#333333;">Run continuous, repeatable testing between formal assessments — without growing the team.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-screen-label="CTA" style="padding:90px 48px;border-bottom:1px solid #0a0a0a;background:#0a0a0a;color:#ffffff;">
+    <div style="max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap;">
+      <h2 style="margin:0;font-size:36px;font-weight:700;letter-spacing:-0.01em;max-width:24ch;text-wrap:balance;">See Aegis on a live engagement.</h2>
+      <a href="About.dc.html#contact" style="background:#ffffff;color:#0a0a0a;padding:16px 32px;font-family:'IBM Plex Mono',monospace;font-size:14px;letter-spacing:0.08em;text-transform:uppercase;white-space:nowrap;" style-hover="background:#0a0a0a;color:#ffffff;box-shadow:inset 0 0 0 1px #ffffff;">Book a demo</a>
+    </div>
+  </section>
+
+  <footer style="padding:40px 48px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;color:#555555;">
+    <span>© 2026 Cyber Guards</span>
+    <div style="display:flex;gap:28px;">
+      <a href="Services.dc.html" style="color:#555555;" style-hover="color:#0a0a0a;">Services</a>
+      <a href="Product.dc.html" style="color:#555555;" style-hover="color:#0a0a0a;">Product</a>
+      <a href="About.dc.html" style="color:#555555;" style-hover="color:#0a0a0a;">About Us</a>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      features: [
+        { num: "01", name: "Automated recon", desc: "Subdomain, DNS, and asset discovery runs the moment scope is signed — results deduplicated and prioritized." },
+        { num: "02", name: "Service enumeration", desc: "Fingerprinting, port and version mapping across the full scope, with noisy checks throttled to stay in bounds." },
+        { num: "03", name: "Evidence capture", desc: "Screenshots, request/response pairs, and proof-of-concept artifacts collected and indexed automatically." },
+        { num: "04", name: "Finding triage", desc: "Duplicates merged, severity pre-scored, and false-positive candidates flagged before an analyst ever looks." },
+        { num: "05", name: "Report drafting", desc: "Findings arrive as structured draft sections in your template — testers edit, they don't transcribe." },
+        { num: "06", name: "Full audit trail", desc: "Every automated action is logged, timestamped, and scoped — ready for client review and compliance." }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>
