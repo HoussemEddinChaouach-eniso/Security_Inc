@@ -458,9 +458,15 @@ footer{border-top:1px solid var(--line);padding:64px 0 32px;background:rgba(11,2
 <script>
 document.documentElement.classList.add('js');
 document.addEventListener('DOMContentLoaded', function () {
+  document.title = document.title.replace(/Cyber Guards/g, 'CyberLab');
   document.querySelectorAll('.brand img').forEach(function (img) {
     img.src = 'image-removebg-preview%20(1).svg';
   });
+  var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  var node;
+  while ((node = walker.nextNode())) {
+    node.nodeValue = node.nodeValue.replace(/Cyber Guards/g, 'CyberLab');
+  }
 });
 </script>
 </head>
