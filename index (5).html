@@ -70,9 +70,9 @@ button,input,textarea,select{font:inherit;color:inherit}
 /* nav */
 .nav{position:fixed;top:0;left:0;right:0;z-index:150;border-bottom:1px solid transparent;transition:background .3s,border-color .3s,backdrop-filter .3s}
 .nav.scrolled{background:rgba(11,22,44,.82);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-color:var(--line)}
-.nav-in{display:flex;align-items:center;justify-content:space-between;gap:16px;height:76px}
+.nav-in{display:flex;align-items:center;justify-content:space-between;gap:16px;height:88px}
 .brand{display:flex;align-items:center;gap:12px}
-.brand img{width:180px;height:46px;border-radius:0;object-fit:contain}
+.brand img{width:210px;height:58px;border-radius:0;object-fit:contain}
 .brand span{display:none}
 .links{display:none;gap:4px;list-style:none;margin:0;padding:0}
 .links a{display:block;padding:10px 14px;font-size:15px;font-weight:500;color:var(--fg-2);border-radius:8px;transition:color .2s}
@@ -85,7 +85,7 @@ button,input,textarea,select{font:inherit;color:inherit}
 .mmenu.open{display:block}
 .mmenu a{display:block;padding:14px 0;font-size:18px;font-weight:600;border-bottom:1px solid var(--line)}
 .mmenu .btn{display:flex;margin-top:14px}
-@media(min-width:1060px){.links,.nav-cta{display:flex}.burger,.mmenu,.mmenu.open{display:none}}
+@media(min-width:1060px){.nav-in{height:96px}.brand img{width:240px;height:66px}.links,.nav-cta{display:flex}.burger,.mmenu,.mmenu.open{display:none}}
 
 /* hero */
 .hero{position:relative;padding:124px 0 40px;display:flex;flex-direction:column;justify-content:center}
